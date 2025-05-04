@@ -1,0 +1,164 @@
+/* Definição das cores principais do site (temporariamente) */
+:root {
+    --azul-principal: #0057b7;
+    --azul-claro: #e0ecff;
+    --amarelo-leve: #fff9db;
+  }
+  
+  /* Alterar os blocos depois para melhorar design */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--amarelo-leve);
+  }
+  
+  header {
+    background-color: var(--azul-principal);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .info-topo {
+    background-color: var(--azul-claro);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  nav {
+    background-color: var(--azul-principal);
+    text-align: center;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .menu-interativo {
+    background-color: white;
+    border-top: 5px solid var(--azul-principal);
+    position: relative;
+  }
+  
+  .carrossel-container {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    scroll-behavior: smooth;
+  }
+  
+  .item {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease;
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  .item img {
+    width: 100%;
+    border: 2px solid var(--azul-principal);
+    border-radius: 10px;
+  }
+  
+  .seta {
+    background-color: var(--azul-principal);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  
+  .seta.esquerda {
+    left: 10px;
+  }
+  
+  .seta.direita {
+    right: 10px;
+  }
+  
+  .indicadores {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .indicadores span {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .indicadores .ativo {
+    background-color: var(--azul-principal);
+  }
+  
+  .servicos-extra {
+    background-color: #fdf7e3;
+  }
+  
+  .sobre {
+    background-color: white;
+  }
+  
+  .diferenciais-valores {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--azul-claro);
+    padding: 30px 10px;
+  }
+  
+  .diferenciais-valores div {
+    width: 40%;
+  }
+  
+  .info-footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 30px 10px;
+    border-top: 5px solid var(--azul-principal);
+  }
+  
+  .coluna {
+    width: 30%;
+    text-align: left;
+  }
+  
+  footer {
+    background-color: var(--azul-principal);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+  }
+  
+  h1, h2, h3, h4 {
+    color: black;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
