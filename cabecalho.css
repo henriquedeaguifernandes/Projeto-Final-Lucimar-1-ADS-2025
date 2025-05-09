@@ -1,0 +1,20 @@
+/* Definição das cores principais do site (temporariamente) */
+:root {
+    --azul-principal: #0057b7;
+    --azul-claro: #e0ecff;
+    --amarelo-leve: #fff9db;
+  }
+  
+header {
+    background-color: var(--azul-principal);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .info-topo {
+    background-color: var(--azul-claro);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
