@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site da Empresa</title>
+  <link rel="stylesheet" href="style1.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- Cabeçalho com logo  (adicionar logo e talvez trazer para o lado)-->
+  <header>
+    <link rel="stylesheet" href="cabecalho.css">
+    <h1>Logo da Empresa</h1>
+  </header>
+
+  <!-- Barra de informações adicionais (Ver o que colocar) -->
+  <div class="info-topo">
+    <link rel="stylesheet" href="cabecalho.css">
+    Espaço para outras informações relevantes, como o contato ou uma função direta.
+  </div>
+
+  <!-- Menu de navegação principal (ver como adicionar sub-abas dentro dos serviços por exemplo) -->
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="servico.html">Serviços</a>
+    <a href="contato.html">Contato</a>
+    <a href="sobre.html">Sobre nós</a>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Início indicadores para navegar nos slides do carousel -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <!-- Fim indicadores para navegar nos slides do carousel -->
+
+    <!-- Início slide carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="imagens/banner_top_v1.jpg" class="d-block w-100" alt="Categoria 1">
+        </div>
+        <div class="carousel-item">
+            <img src="imagens/banner_top_v2.jpg" class="d-block w-100" alt="Categoria 2">
+        </div>
+        <div class="carousel-item">
+            <img src="imagens/banner_top_v3.jpg" class="d-block w-100" alt="Categoria 3">
+        </div>
+    </div>
+    <!-- Fim slide carousel -->
+
+    <!-- Início anterior e próximo slide carousel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    <!-- Fim anterior e próximo slide carousel -->
+
+</div>
+
+  <!-- Seção para serviços ou cotações adicionais (pensar o que colocar nos sites de exemplo) -->
+  <section class="servicos-extra">
+    <h2>Outros Serviços / Cotação</h2>
+    <p>Área para serviços adicionais ou um formulário de cotação.</p>
+  </section>
+
+  <!-- Sobre a empresa (adicionar sobre e colocar formatação do texto)-->
+  <section class="sobre">
+    <h2>Sobre a Empresa</h2>
+    <p>Breve parágrafo sobre a empresa: experiência, missão e visão.</p>
+  </section>
+
+  <!-- Diferenciais e valores da empresa lado a lado (melhorar depois) -->
+  <section class="diferenciais-valores">
+    <div>
+      <h3>Diferenciais</h3>
+      <ul>
+        <li>Atendimento personalizado</li>
+        <li>Equipe especializada</li>
+        <li>Entrega ágil</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Valores</h3>
+      <ul>
+        <li>Ética</li>
+        <li>Comprometimento</li>
+        <li>Qualidade</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Rodapé com três colunas: informações, links e destaques (adicionar os dados depois) -->
+  <section class="info-footer">
+    <link rel="stylesheet" href="rodape.css">
+    <div class="coluna">
+      <h4>Informações</h4>
+      <p>CNPJ: 00.000.000/0001-00</p>
+      <p>Telefone: (11) 0000-0000</p>
+      <p>Email: contato@empresa.com</p>
+      <p>WhatsApp: (11) 91234-5678</p>
+    </div>
+    <div class="coluna">
+      <h4>Outras Páginas</h4>
+      <a href="index.html">Sobre</a><br>
+      <a href="servico.html">Serviços</a><br>
+      <a href="#">Blog</a>
+    </div>
+    <div class="coluna">
+      <h4>Mais Acessados</h4>
+      <a href="#">Página de Cotação</a><br>
+      <a href="#">Contato Direto</a>
+    </div>
+  </section>
+
+  <!-- Rodapé final com direitos autorais (pensar no que colocar) -->
+  <footer>
+    <link rel="stylesheet" href="rodape.css">
+    Rodapé da empresa © 2025
+  </footer>
+
+  <!-- Incluir o JS do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+crossorigin="anonymous"></script>
+</body>
+</html>
