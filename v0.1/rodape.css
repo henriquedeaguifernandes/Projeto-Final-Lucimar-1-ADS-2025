@@ -1,0 +1,27 @@
+/* Definição das cores principais do site (temporariamente) */
+:root {
+    --azul-principal: #0057b7;
+    --azul-claro: #e0ecff;
+    --amarelo-leve: #fff9db;
+  }
+  
+.info-footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 30px 10px;
+    border-top: 5px solid var(--azul-principal);
+  }
+  
+  .coluna {
+    width: 30%;
+    text-align: left;
+  }
+  
+  footer {
+    background-color: var(--azul-principal);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+  }
