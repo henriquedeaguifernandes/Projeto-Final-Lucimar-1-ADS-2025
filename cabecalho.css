@@ -1,0 +1,61 @@
+/* Definição das cores principais do site (temporariamente) */
+:root {
+    --azul-principal: #0057b7;
+    --azul-claro: #e0ecff;
+    --amarelo-leve: #fff9db;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+header {
+    background-color: var(--azul-principal);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .info-topo {
+    background-color: var(--azul-claro);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  nav {
+    background-color: var(--azul-principal);
+    text-align: center;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+
+  section {
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .menu-interativo {
+    background-color: white;
+    border-top: 5px solid var(--azul-principal);
+    position: relative;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+
+  nav a:hover {
+  text-decoration: underline;
+  color: #ffdd00; /* Um contraste com o azul */
+}
