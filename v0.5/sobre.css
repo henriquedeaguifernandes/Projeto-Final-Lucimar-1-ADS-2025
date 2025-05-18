@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #fff;
+    color: #333;
+  }
+  
+  main.sobre-nos {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .trajetoria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .trajetoria .texto {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .trajetoria .texto h2 {
+    font-size: 28px;
+    color: #1a237e;
+  }
+  
+  .trajetoria .texto p {
+    margin-bottom: 15px;
+  }
+  
+  .botao-servicos {
+    background-color: #e64a19;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  
+  .trajetoria .imagem {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .trajetoria .imagem img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .principios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 60px;
+    justify-content: space-between;
+  }
+  
+  .principio {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+  }
+  
+  .principio img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .principio h3 {
+    font-size: 22px;
+    color: #1a237e;
+    margin-bottom: 10px;
+  }
+  
+  .principio p {
+    font-size: 16px;
+  }
+  

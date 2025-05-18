@@ -1,0 +1,13 @@
+#carouselExampleIndicators {
+    max-width: 100vw;
+    max-height: 400px; /* ajuste conforme desejar */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Faz as imagens ocuparem toda a área do carrossel */
+#carouselExampleIndicators .carousel-item img {
+    width: 100%;
+    height: 400px; /* igual ao max-height do carrossel */
+    object-fit: cover; /* cobre toda a área sem distorcer */
+}
