@@ -13,11 +13,11 @@ header {
     background-color: var(--azul-principal);
     color: white;
     text-align: center;
-    padding: 10px 0;      /* diminua o padding */
+    padding: 10px 0;     
 }
 
 header h1 {
-    font-size: 28px;      /* diminua o tamanho da fonte */
+    font-size: 28px;      
     margin: 0;
 }
   
@@ -90,15 +90,15 @@ ul li ul.dropdown {
     z-index: 999;
     display: none;
     padding: 0;
-    margin: 0; /* adicione esta linha */
-    text-align: center; /* centraliza o conteúdo */
+    margin: 0; 
+    text-align: center; 
 }
 
 ul li ul.dropdown a {
     display: block;
     width: 100%;
     text-align: center;
-    margin: 0 auto; /* garante centralização */
+    margin: 0 auto; 
     padding: 12px 0;
     box-sizing: border-box;
     color: #FFF;
@@ -112,8 +112,8 @@ ul li:hover ul.dropdown {
 }
 
 ul li:hover > a {
-    background: rgba(255,255,255,0.35); /* branco transparente */
-    color: var(--azul-principal);       /* azul principal */
+    background: rgba(255,255,255,0.35); 
+    color: var(--azul-principal);       
     transition: background 0.2s, color 0.2s;
 }
 
