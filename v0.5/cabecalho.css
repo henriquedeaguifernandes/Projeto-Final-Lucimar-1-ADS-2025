@@ -126,7 +126,7 @@ ul li:hover ul.dropdown {
 
 ul li:hover > a {
     background: rgba(255,255,255,0.35); 
-    color: var(--azul-principal);      
+    color: rgba(255, 221, 0, 0.95); /* Laranja */
     transition: background 0.2s, color 0.2s;
 }
 
@@ -137,10 +137,4 @@ html, body {
     min-height: 100vh;
     box-sizing: border-box;
 }
-
-nav > ul > li > a:hover {
-  text-decoration: underline;
-  color: rgb(255, 221, 0.75);
-}
-
 
