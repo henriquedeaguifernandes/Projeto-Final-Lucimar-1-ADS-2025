@@ -14,17 +14,17 @@ body {
   }
   
   .menu-lateral {
-    width: 200px;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
   }
   
   .menu-lateral a {
     display: block;
     background-color: #e0e0e0;
     color: #333;
-    padding: 15px;
+    padding: 18px;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
