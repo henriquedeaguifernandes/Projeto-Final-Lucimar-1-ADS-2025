@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site da Empresa</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="carousel.css">
+ 
+  <!-- Cabeçalho com logo  (adicionar logo e talvez trazer para o lado)-->
+  <header>
+    <link rel="stylesheet" href="cabecalho.css">
+    <h1>Logo da Empresa</h1>
+  </header>
+
+  <!-- Barra de informações adicionais (Ver o que colocar) -->
+  <div class="info-topo">
+    <link rel="stylesheet" href="cabecalho.css">
+    Especialista em transportes 
+  </div>
+
+  <!-- Menu de navegação principal (ver como adicionar sub-abas dentro dos serviços por exemplo) -->
+  <nav class="menu">
+    <div>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li>
+          <a href="servico.html">Serviços</a>
+          <ul class="dropdown">
+            <li><a href="servico1.html">Serviço 1</a></li>
+            <li><a href="servico2.html">Serviço 2</a></li>
+            <li><a href="servico3.html">Serviço 3</a></li>
+            <li><a href="servico4.html">Serviço 4</a></li>
+            <li><a href="servico5.html">Serviço 5</a></li>
+            <li><a href="servico6.html">Serviço 6</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="carousel">
+        <div class="carousel-track">
+            <div class="carousel-slide"><img src="imagem/teste.jpg"
+                    alt="Slide 1"></div>
+            <div class="carousel-slide"><img src="imagem/teste.jpg"
+                    alt="Slide 2"></div>
+            <div class="carousel-slide"><img src="imagem/teste.jpg"
+                    alt="Slide 3"></div>
+        </div>
+        <button class="carousel-button left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#333" viewBox="0 0 24 24">
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+            </svg>
+        </button>
+        <button class="carousel-button right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#333" viewBox="0 0 24 24">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+            </svg>
+        </button>
+
+        </button>
+        <div class="carousel-indicators"></div>
+    </div>
+
+  <!-- Seção para serviços ou cotações adicionais (pensar o que colocar nos sites de exemplo) -->
+ <section class="servicos-extra">
+  <h2>Nossos Serviços</h2>
+  <div class="grid-servicos">
+    <!-- Bloco 1: Texto com link -->
+    <a href="servico.html" class="bloco-servico texto">
+      <p>Aqui estão alguns dos nossos principais serviços! 
+      </p>
+      <p>Clique aqui caso deseje conhecer todos!</p>
+    </a>
+
+    <!-- Bloco 2 -->
+    <a href="servico1.html" class="bloco-servico">
+      <img src="imagem/teste.jpg" alt="Serviço 1">
+      <h3>Serviço1</h3>
+    </a>
+
+    <!-- Bloco 3 -->
+    <a href="servico2.html" class="bloco-servico">
+      <img src="imagem/teste.jpg" alt="Serviço 2">
+      <h3>Serviço2</h3>
+    </a>
+
+    <!-- Bloco 4 -->
+    <a href="servico3.html" class="bloco-servico">
+      <img src="imagem/teste.jpg" alt="Serviço 3">
+      <h3>Serviço3</h3>
+    </a>
+
+    <!-- Bloco 5 -->
+    <a href="servico4.html" class="bloco-servico">
+      <img src="imagem/teste.jpg" alt="Serviço 4">
+      <h3>Serviço4</h3>
+    </a>
+
+    <!-- Bloco 6: Texto com link -->
+    <a href="contato.html" class="bloco-servico texto destaque">
+      <p>Solicite um orçamento agora mesmo!</p>
+    </a>
+  </div>
+</section>
+
+<section class="parceiros">
+  <h2>Nossos parceiros</h2>
+  <p class="subtitulo">Empresas que confiam em nosso trabalho</p>
+  <div class="logos-parceiros">
+    <img src="imagem/teste.jpg" alt="Logo do parceiro 1">
+    <img src="imagem/teste.jpg" alt="Logo do parceiro 2">
+  </div>
+</section>
+
+<section class="diferenciais-valores">
+  <h2>Nossos Diferenciais</h2>
+  <p class="subtitulo">O que nos torna únicos</p>
+  <div class="blocos-diferenciais">
+    <div class="bloco">
+      <h3>Ampla Experiência</h3>
+      <p>Mais de 25 anos de experiência no segmento de transportes rodoviários.</p>
+    </div>
+    <div class="bloco">
+      <h3>Ótimo Atendimento</h3>
+      <p>Soluções customizadas para cada cliente, com toda cordialidade e competência.</p>
+    </div>
+    <div class="bloco">
+      <h3>Melhoria Contínua</h3>
+      <p>Busca constante pela excelência através de pessoas, processos e tecnologia.</p>
+    </div>
+    <div class="bloco">
+      <h3>Custo x Benefício</h3>
+      <p>Preço justo e excelente custo-benefício. Confira agora mesmo nossos preços!</p>
+    </div>
+  </div>
+</section>
+  
+  <!-- Rodapé com três colunas: informações, links e destaques (adicionar os dados depois) -->
+  <section class="info-footer">
+    <link rel="stylesheet" href="rodape.css">
+    <div class="coluna">
+      <h4>Informações</h4>
+      <p>CNPJ: 28.298.470/0001-00</p>
+      <p>Telefone: (17) 3235-1310</p>
+      <p>Email: contato@empresa.com</p>
+      <p>WhatsApp: (17) 99645-5063</p>
+    </div>
+    <div class="coluna">
+      <h4>Páginas principais</h4>
+      <a href="index.html">Início</a><br>
+      <a href="sobre.html">Sobre</a><br>
+      <a href="servico.html">Serviços</a><br>
+      <a href="contato.html">Contato</a>
+    </div>
+    <div class="coluna">
+      <h4>Nossos serviços</h4>
+      <a href="servico1.html">Serviço1</a><br>
+      <a href="servico2.html">Serviço2</a><br>
+      <a href="servico3.html">Serviço3</a><br>
+      <a href="servico4.html">Serviço4</a><br>
+      <a href="servico5.html">Serviço5</a><br>
+      <a href="servico6.html">Serviço6</a>
+    </div>
+  </section>
+
+  <!-- Rodapé final com direitos autorais (pensar no que colocar) -->
+  <footer>
+    <link rel="stylesheet" href="rodape.css">
+    Rodapé da empresa © 2025
+  </footer>
+  <script src="cabecalho.js"></script>
+  <script src="carousel.js"></script>
+  </body>
+
+</html>

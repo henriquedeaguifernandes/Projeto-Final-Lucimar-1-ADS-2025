@@ -1,0 +1,44 @@
+/* Definição das cores principais do site (temporariamente) */
+:root {
+    --azul-principal: #0057b7;
+    --azul-claro: #e0ecff;
+    --amarelo-leve: #fff9db;
+  }
+  
+.info-footer {
+  background-color: #333333;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 10px; 
+  width: 100%;
+  box-sizing: border-box;
+  gap: 10px; 
+}
+
+.coluna {
+  width: 25%; 
+  text-align: left;
+}
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  body {
+    background-color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .info-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.info-footer a:hover {
+  text-decoration: underline;
+  color: #ffdd00; /* Um amarelo leve para destacar */
+}

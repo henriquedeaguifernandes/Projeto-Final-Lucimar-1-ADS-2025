@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site da Empresa</title>
+  <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+
+  <!-- Cabeçalho com logo  (adicionar logo e talvez trazer para o lado)-->
+  <header>
+    <link rel="stylesheet" href="cabecalho.css">
+    <h1>Logo da Empresa</h1>
+  </header>
+
+  <!-- Barra de informações adicionais (Ver o que colocar) -->
+  <div class="info-topo">
+    <link rel="stylesheet" href="cabecalho.css">
+    Especialista em transportes
+  </div>
+
+  <!-- Menu de navegação principal (ver como adicionar sub-abas dentro dos serviços por exemplo) -->
+ <nav class="menu">
+        <ul>
+        <li><a href ="index.html">Início</a></li>
+        <li>
+            <a href="servico.html">Serviços</a>
+            <ul class = "dropdown">
+                <li><a href ="servico1.html">Serviço 1</a></li>
+                <li><a href ="#">Serviço 2</a></li>
+                <li><a href ="#">Serviço 3</a></li>
+                <li><a href ="#">Serviço 4</a></li>
+                <li><a href ="#">Serviço 5</a></li>
+                <li><a href ="#">Serviço 6</a></li>
+            </ul>
+        </li>
+        <li><a href ="contato.html">Contato</a></li>
+        <li><a href ="sobre.html">Sobre nós</a></li>
+    </ul>
+    </nav>
+
+  <div class="container">
+    <section id="corpo2">
+      <div>
+        <h1 id="titulo">Formulário de contato</h1>
+        <p id="subtitulo">Preencha o formulário abaixo para entrar em contato conosco.</p>
+        <br>
+      </div>
+
+      <form id="formulario">
+        <fieldset class="grupo">
+    
+          <div class="campo">
+            <label for="nome"><b>Nome:</b></label>
+            <input type="text" name="nome" id="nome" required>
+          </div>
+    
+          <div class="campo">
+            <label for="empresa"><b>Empresa:</b></label>
+            <input type="text" name="empresa" id="sobrenome" required>
+          </div>
+        </fieldset>
+        <fieldset class="grupo">
+          <div class="campo">
+            <label for="telefone"><b>Telefone:</b></label>
+            <input type="tel" name="telefone" id="telefone" required>
+          </div>
+
+          <div class="campo">
+            <label for="email"><b>Email:</b></label>
+            <input type="email" name="email" id="email" required>
+          </div>
+        </fieldset>
+
+        <div class="campo">
+          <label for="assunto"><b>Assunto:</b></label>
+          <select name="assunto" id="assunto" style="width: 100%;">
+            <option value="">Selecione um assunto</option>
+            <option value="duvida">Dúvida</option>
+            <option value="orcamento">Serviço</option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="elogio">Elogio</option>
+          </select>
+        </div>
+
+          <div class="campo">
+            <br>
+            <label for="mensagem"><b>Mensagem:</b></label>
+            <div style="position: relative;">
+              <textarea rows="6" style="width: 26em" id="mensagem" name="mensagem" required></textarea>
+            </div>
+          </div>
+      </form>
+    
+
+      <button class="botao" type="submit" onclick="enviarParaJSON()">Concluído</button>
+
+  </section>
+  <div>
+    <h1 id="titulo" style="margin-bottom: 60px;">Localização</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3729.8069641698353!2d-49.332129924925866!3d-20.79909598079332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bc4d44db78038f%3A0xf1818aa320ec07ab!2sTRANSBARSOTTI!5e0!3m2!1spt-BR!2sbr!4v1746810212754!5m2!1spt-BR!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+<script>
+  document.getElementById('mensagem').addEventListener('input', function () {
+    const contador = document.getElementById('contador');
+    contador.textContent = this.value.length + ' caracteres';
+  });
+
+</script>
+  <!-- Rodapé com três colunas: informações, links e destaques (adicionar os dados depois) -->
+  <section class="info-footer">
+    <link rel="stylesheet" href="rodape.css">
+    <div class="coluna">
+      <h4>Informações</h4>
+      <p>CNPJ: 28.298.470/0001-00</p>
+      <p>Telefone: (17) 3235-1310</p>
+      <p>Email: contato@empresa.com</p>
+      <p>WhatsApp: (17) 99645-5063</p>
+    </div>
+    <div class="coluna">
+      <h4>Páginas principais</h4>
+      <a href="index.html">Início</a><br>
+      <a href="sobre.html">Sobre</a><br>
+      <a href="servico.html">Serviços</a><br>
+      <a href="contato.html">Contato</a>
+    </div>
+    <div class="coluna">
+      <h4>Nossos serviços</h4>
+      <a href="servico1.html">Serviço1</a><br>
+      <a href="servico2.html">Serviço2</a><br>
+      <a href="servico3.html">Serviço3</a><br>
+      <a href="servico4.html">Serviço4</a><br>
+      <a href="servico5.html">Serviço5</a><br>
+      <a href="servico6.html">Serviço6</a>
+    </div>
+  </section>
+
+  <!-- Rodapé final com direitos autorais (pensar no que colocar) -->
+  <footer>
+    <link rel="stylesheet" href="rodape.css">
+    Rodapé da empresa © 2025
+  </footer>
+
+<script src="cabecalho.js"></script>
+</body>
