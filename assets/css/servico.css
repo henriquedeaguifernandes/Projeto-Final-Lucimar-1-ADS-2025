@@ -71,4 +71,71 @@ body {
     font-size: 18px;
     color: #1a237e;
   }
-  
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 900px) {
+  .container-servicos, main.container-servicos {
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px 5vw;
+    align-items: stretch;
+  }
+  .menu-lateral {
+    width: 100%;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  .menu-lateral a {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .grade-servicos {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-servicos, main.container-servicos {
+    padding: 8px 2vw;
+    gap: 10px;
+  }
+  .menu-lateral {
+    flex-direction: column;
+    width: 100%;
+    gap: 6px;
+  }
+  .menu-lateral a {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .grade-servicos {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .servico img {
+    height: 110px;
+  }
+  .servico h3 {
+    font-size: 15px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-servicos, main.container-servicos {
+    padding: 4px 1vw;
+  }
+  .menu-lateral a {
+    font-size: 12px;
+    padding: 6px;
+  }
+  .servico img {
+    height: 70px;
+  }
+  .servico h3 {
+    font-size: 12px;
+    margin: 6px 0;
+  }
+}

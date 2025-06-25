@@ -3,8 +3,14 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: Arial, sans-serif;
+  padding-top: 110px;
+}
+
+main {
+  padding-top: 0;
 }
 
 .carousel {
@@ -97,8 +103,57 @@ body {
   background-color: #003c82; 
 }
 
-@media (max-width: 600px) {
+/* Responsividade para dispositivos móveis */
+@media (max-width: 900px) {
+  body {
+    padding-top: 80px;
+  }
+  .carousel {
+    height: 300px;
+  }
   .carousel-slide {
-    height: 250px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-top: 81px;
+  }
+  .carousel {
+    height: 180px;
+  }
+  .carousel-slide {
+    height: 180px;
+  }
+  .carousel-button {
+    width: 36px;
+    height: 36px;
+    font-size: 1.3rem;
+  }
+  .carousel-indicators {
+    gap: 4px;
+    margin-top: 8px;
+  }
+  .carousel-indicators button {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+   body {
+    padding-top: 65px;
+  }
+  .carousel {
+    height: 120px;
+  }
+  .carousel-slide {
+    height: 120px;
+  }
+  .carousel-button {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
   }
 }

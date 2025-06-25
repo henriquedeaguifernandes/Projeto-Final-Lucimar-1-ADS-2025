@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -112,3 +111,87 @@ body {
   border-radius: 8px;
   object-fit: cover;
 }
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 900px) {
+  .container-servicos {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 2vw;
+  }
+  .menu-lateral {
+    width: 100%;
+    flex-direction: row;
+    gap: 8px;
+    padding: 18px 0 0 0;
+    justify-content: center;
+  }
+  .menu-lateral a {
+    padding: 12px;
+    font-size: 15px;
+  }
+  .grade-servicos {
+    gap: 18px;
+  }
+  .conteudo-servico {
+    gap: 18px;
+    max-width: 98vw;
+  }
+  .imagem-servico,
+  .texto-servico {
+    max-width: 98vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-servicos {
+    padding: 0 1vw;
+  }
+  .menu-lateral {
+    flex-direction: column;
+    width: 100%;
+    gap: 6px;
+    padding: 8px 0 0 0;
+  }
+  .menu-lateral a {
+    font-size: 13px;
+    padding: 8px;
+  }
+  .grade-servicos {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .servico1 h3 {
+    font-size: 15px;
+    margin: 10px 0;
+  }
+  .secao-servico {
+    padding: 10px 2vw;
+    min-height: unset;
+  }
+  .conteudo-servico {
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100vw;
+  }
+  .imagem-servico,
+  .texto-servico {
+    max-width: 100vw;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu-lateral a {
+    font-size: 11px;
+    padding: 6px;
+  }
+  .servico1 h3 {
+    font-size: 12px;
+    margin: 6px 0;
+  }
+  .secao-servico {
+    padding: 4px 1vw;
+  }
+}
+
