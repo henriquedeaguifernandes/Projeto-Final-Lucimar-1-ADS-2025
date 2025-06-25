@@ -1,0 +1,77 @@
+/* Definição das cores principais do site (temporariamente) */
+:root {
+    --azul-principal: #0057b7;
+    --azul-claro: #e0ecff;
+    --amarelo-leve: #fffffe;
+  }
+  
+.info-footer {
+  background-color: var(--azul-principal);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+  text-align: left;
+  font-size: 0.95rem;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+
+.coluna {
+  flex: 1 1 220px;
+  margin: 10px;
+}
+
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-top: auto;
+}
+  
+  body {
+    background-color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .info-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.info-footer a:hover {
+  text-decoration: underline;
+  color: #ffdd00; /* Um amarelo leve para destacar */
+}
+
+.redes-sociais {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.icones-sociais {
+  align-items: flex-start;
+}
+
+.social-icon {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 5px;
+}
+
+.social-icon[alt="Instagram"]:hover {
+  box-shadow: 0 0 8px rgba(255, 182, 193, 0.8); /* rosa claro */
+}
+
+.social-icon[alt="WhatsApp"]:hover {
+  box-shadow: 0 0 8px rgba(0, 255, 0, 0.7); /* verde */
+}
+
