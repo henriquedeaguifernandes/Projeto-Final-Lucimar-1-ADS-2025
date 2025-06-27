@@ -141,6 +141,14 @@ iframe {
     margin-top: -35px;
 }
 
+/* Estilo do contador de caracteres */
+#contador {
+  position: absolute;
+  bottom: 8px;
+  right: 30px;
+  font-size: 0.8em;
+}
+
 /* Responsividade para dispositivos móveis */
 @media (max-width: 900px) {
   /* Container em coluna e ajustes de espaçamento */
