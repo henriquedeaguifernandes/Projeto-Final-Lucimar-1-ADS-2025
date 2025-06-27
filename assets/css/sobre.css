@@ -1,3 +1,4 @@
+/* Estilo do corpo (body) da página Sobre */
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
@@ -5,37 +6,43 @@ body {
     line-height: 1.6;
     background: #fff;
     color: #333;
-  }
-  
-  main.sobre-nos {
+}
+
+/* Área principal da página Sobre */
+main.sobre-nos {
     padding: 40px 20px;
     max-width: 1200px;
     margin: auto;
-  }
-  
-  .trajetoria {
+}
+
+/* Seção de trajetória (história da empresa) */
+.trajetoria {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  .trajetoria .texto {
+}
+
+/* Texto da trajetória */
+.trajetoria .texto {
     flex: 1;
     min-width: 300px;
-  }
-  
-  .trajetoria .texto h2 {
+}
+
+/* Título da trajetória */
+.trajetoria .texto h2 {
     font-size: 28px;
     color: #1a237e;
-  }
-  
-  .trajetoria .texto p {
+}
+
+/* Parágrafo da trajetória */
+.trajetoria .texto p {
     margin-bottom: 15px;
-  }
-  
-  .botao-servicos {
+}
+
+/* Botão para serviços */
+.botao-servicos {
     background-color: #e64a19;
     color: #fff;
     padding: 12px 20px;
@@ -44,57 +51,67 @@ body {
     font-weight: bold;
     border-radius: 4px;
     display: inline-block;
-  }
-  
-  .trajetoria .imagem {
+}
+
+/* Imagem da trajetória */
+.trajetoria .imagem {
     flex: 1;
     min-width: 300px;
-  }
-  
-  .trajetoria .imagem img {
+}
+
+/* Imagem dentro da trajetória */
+.trajetoria .imagem img {
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  .principios {
+}
+
+/* Seção de princípios */
+.principios {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 60px;
     justify-content: space-between;
-  }
-  
-  .principio {
+}
+
+/* Bloco individual de princípio */
+.principio {
     flex: 1;
     min-width: 250px;
     text-align: center;
-  }
-  
-  .principio img {
+}
+
+/* Imagem do princípio */
+.principio img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
-  }
-  
-  .principio h3 {
+}
+
+/* Título do princípio */
+.principio h3 {
     font-size: 22px;
     color: #1a237e;
     margin-bottom: 10px;
-  }
-  
-  .principio p {
+}
+
+/* Texto do princípio */
+.principio p {
     font-size: 16px;
-  }
-  
-  /* Responsividade para dispositivos móveis */
+}
+
+/* Responsividade para dispositivos móveis */
 @media (max-width: 900px) {
+  /* Área principal com menos preenchimento */
   main.sobre-nos {
     padding: 20px 5vw;
   }
+  /* Menor espaçamento na trajetória */
   .trajetoria {
     gap: 18px;
   }
+  /* Menor espaçamento e margem nos princípios */
   .principios {
     gap: 18px;
     margin-top: 30px;
@@ -105,9 +122,11 @@ body {
 }
 
 @media (max-width: 600px) {
+  /* Área principal ainda menor */
   main.sobre-nos {
     padding: 10px 2vw;
   }
+  /* Trajetória em coluna e menor gap */
   .trajetoria {
     flex-direction: column;
     gap: 10px;
@@ -121,6 +140,7 @@ body {
   .trajetoria .texto h2 {
     font-size: 20px;
   }
+  /* Princípios em coluna e menor gap */
   .principios {
     flex-direction: column;
     gap: 10px;
@@ -144,6 +164,7 @@ body {
 }
 
 @media (max-width: 400px) {
+  /* Área principal mínima */
   main.sobre-nos {
     padding: 4px 1vw;
   }

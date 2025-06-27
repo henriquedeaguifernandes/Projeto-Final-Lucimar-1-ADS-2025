@@ -1,21 +1,24 @@
-/* Definição das cores principais do site (temporariamente) */
+/* Definição das cores principais do site */
 :root {
   --azul-principal: #0057b7;
   --azul-claro: #e0ecff;
   --amarelo-leve: #fff9db;
 }
 
+/* Reset de margens (margin), preenchimento (padding) e dimensionamento da caixa (box-sizing) para todos os elementos */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* margem */
+  padding: 0; /* preenchimento */
+  box-sizing: border-box; /* dimensionamento da caixa */
 }
 
+/* Estilo do corpo (body) da página */
 body {
   font-family: Arial, sans-serif;
   background-color: var(--amarelo-leve);
 }
 
+/* Container do carrossel de imagens */
 .carrossel-container {
   display: flex;
   overflow: hidden;
@@ -23,6 +26,7 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Item individual do carrossel */
 .item {
   flex: 0 0 100%;
   transition: transform 0.5s ease;
@@ -30,17 +34,19 @@ body {
   margin: auto;
 }
 
+/* Imagem dentro do item do carrossel */
 .item img {
   width: 100%;
   border: 2px solid var(--azul-principal);
   border-radius: 10px;
 }
 
+/* Botão de seta do carrossel */
 .seta {
   background-color: var(--azul-principal);
   color: white;
   border: none;
-  padding: 10px;
+  padding: 10px; /* preenchimento */
   font-size: 24px;
   cursor: pointer;
   position: absolute;
@@ -49,19 +55,23 @@ body {
   z-index: 2;
 }
 
+/* Seta esquerda do carrossel */
 .seta.esquerda {
   left: 10px;
 }
 
+/* Seta direita do carrossel */
 .seta.direita {
   right: 10px;
 }
 
+/* Indicadores do carrossel (bolinhas) */
 .indicadores {
   text-align: center;
   margin-top: 10px;
 }
 
+/* Estilo das bolinhas dos indicadores */
 .indicadores span {
   height: 12px;
   width: 12px;
@@ -72,17 +82,19 @@ body {
   cursor: pointer;
 }
 
+/* Indicador ativo do carrossel */
 .indicadores .ativo {
   background-color: var(--azul-principal);
 }
 
+/* Seção de serviços extra */
 .servicos-extra {
   background-color: var(--azul-claro);
-  padding: 40px 20px;
+  padding: 40px 20px; /* preenchimento */
   text-align: center;
 }
 
-
+/* Grid de serviços */
 .grid-servicos {
   background-color: var(--azul-claro);
   display: grid;
@@ -93,34 +105,39 @@ body {
   align-items: stretch;
 }
 
+/* Bloco individual de serviço */
 .bloco-servico {
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-decoration: none;
-  padding: 20px;
+  padding: 20px; /* preenchimento */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Efeito hover no bloco de serviço */
 .bloco-servico:hover {
   transform: scale(1.03);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Imagem do bloco de serviço */
 .bloco-servico img {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
 
+/* Título do bloco de serviço */
 .bloco-servico h3 {
   color: black;
   font-size: 16px;
 }
 
+/* Bloco de serviço apenas texto */
 .bloco-servico.texto {
   display: flex;
   justify-content: center;
@@ -130,25 +147,28 @@ body {
   font-size: 16px;
 }
 
+/* Bloco de serviço em destaque (ocupa todas as colunas) */
 .bloco-servico.destaque {
   grid-column: 1 / -1;
   /* ocupa todas as colunas */
 }
 
+/* Seção de parceiros */
 .parceiros {
   background-color: white;
   text-align: center;
-  padding: 40px 20px;
-  margin: 40px 20px;
-
+  padding: 40px 20px; /* preenchimento */
+  margin: 40px 20px; /* margem */
 }
 
+/* Subtítulo da seção de parceiros */
 .parceiros .subtitulo {
   color: #00bcd4;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
+/* Container das logos dos parceiros */
 .logos-parceiros {
   display: flex;
   justify-content: center;
@@ -157,44 +177,51 @@ body {
   align-items: center;
 }
 
+/* Imagem das logos dos parceiros */
 .logos-parceiros img {
   max-width: 180px;
   height: auto;
   object-fit: contain;
   border: 2px solid var(--azul-principal);
   border-radius: 8px;
-  padding: 10px;
+  padding: 10px; /* preenchimento */
   background-color: #f9f9f9;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Efeito hover nas logos dos parceiros */
 .logos-parceiros img:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Seção sobre */
 .sobre {
   background-color: white;
 }
 
+/* Seção de diferenciais e valores */
 .diferenciais-valores {
   background-color: var(--azul-claro);
-  padding: 40px 20px;
+  padding: 40px 20px; /* preenchimento */
   text-align: center;
 }
 
+/* Título da seção de diferenciais */
 .diferenciais-valores h2 {
   color: var(--azul-principal);
   margin-bottom: 10px;
   font-size: 28px;
 }
 
+/* Subtítulo padrão */
 .subtitulo {
   color: #00bcd4;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
+/* Container dos blocos de diferenciais */
 .blocos-diferenciais {
   display: flex;
   flex-wrap: wrap;
@@ -202,45 +229,50 @@ body {
   gap: 20px;
 }
 
+/* Bloco individual de diferencial */
 .bloco {
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  padding: 20px;
+  padding: 20px; /* preenchimento */
   width: 300px;
   text-align: left;
 }
 
+/* Título do bloco de diferencial */
 .bloco h3 {
   color: #1f2c5c;
   margin-bottom: 10px;
   font-size: 18px;
 }
 
+/* Texto do bloco de diferencial */
 .bloco p {
   color: #333;
   font-size: 14px;
 }
 
+/* Títulos gerais */
 h1,
 h2,
 h3 {
   color: black;
 }
 
+/* Imagem do item do carrossel (ajuste de altura) */
 .carousel-item img {
   max-height: 200px;
   object-fit: cover;
 }
 
-
-/* Fundo da seção de serviços */
+/* Fundo da seção de serviços extra */
 .s-extra {
   background-color: var(--azul-principal);
-  padding: 40px 20px;
+  padding: 40px 20px; /* preenchimento */
   color: white;
 }
 
+/* Título da seção de serviços extra */
 .s-extra h2 {
   color: white;
 }
@@ -248,35 +280,41 @@ h3 {
 /* Fundo dos blocos de serviço */
 .grid-servicos {
   background-color: var(--azul-principal);
-  padding: 20px;
+  padding: 20px; /* preenchimento */
 }
 
+/* Bloco de serviço com fundo azul claro */
 .bloco-servico {
   background-color: var(--azul-claro);
   color: black;
   border: 2px solid var(--azul-principal);
 }
 
+/* Título do bloco de serviço com cor azul principal */
 .bloco-servico h3 {
   color: var(--azul-principal);
 }
 
+/* Bloco de serviço apenas texto com borda tracejada */
 .bloco-servico.texto {
   background-color: var(--azul-claro);
   color: black;
   border: 2px dashed var(--azul-principal);
 }
 
+/* Bloco de serviço em destaque com fundo branco */
 .bloco-servico.destaque {
   background-color: white;
   border: 2px solid var(--azul-principal);
 }
 
+/* Efeito hover no bloco de serviço */
 .bloco-servico:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Imagem do bloco de serviço com borda arredondada */
 .bloco-servico img {
   border-radius: 8px;
   border: 2px solid var(--azul-principal);
@@ -284,47 +322,56 @@ h3 {
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 900px) {
+  /* Grid de serviços adaptado */
   .grid-servicos {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 18px;
-    padding: 10px;
+    padding: 10px; /* preenchimento */
   }
+  /* Bloco de serviço e diferencial adaptados */
   .bloco-servico, .bloco {
-    padding: 14px;
+    padding: 14px; /* preenchimento */
     width: 100%;
     min-width: 0;
     max-width: 100%;
   }
+  /* Espaçamento das logos dos parceiros */
   .logos-parceiros {
     gap: 18px;
   }
+  /* Preenchimento e margem das seções */
   .parceiros {
-    padding: 20px 5px;
-    margin: 20px 5px;
+    padding: 20px 5px; /* preenchimento */
+    margin: 20px 5px;  /* margem */
   }
   .diferenciais-valores {
-    padding: 20px 5px;
+    padding: 20px 5px; /* preenchimento */
   }
 }
 
 @media (max-width: 600px) {
+  /* Carrossel em coluna */
   .carrossel-container {
     flex-direction: column;
     min-width: 0;
   }
+  /* Item do carrossel mais largo */
   .item {
     max-width: 95vw;
   }
+  /* Preenchimento das seções reduzido */
   .servicos-extra, .s-extra, .diferenciais-valores, .parceiros {
-    padding: 12px 2vw;
+    padding: 12px 2vw; /* preenchimento */
   }
+  /* Grid de serviços em uma coluna */
   .grid-servicos {
     grid-template-columns: 1fr;
     gap: 10px;
-    padding: 5px;
+    padding: 5px; /* preenchimento */
   }
+  /* Bloco de serviço e diferencial menores */
   .bloco-servico, .bloco {
-    padding: 10px;
+    padding: 10px; /* preenchimento */
     font-size: 14px;
     width: 100%;
     min-width: 0;
@@ -336,9 +383,10 @@ h3 {
   .bloco-servico.texto, .bloco-servico {
     font-size: 13px;
   }
+  /* Logos dos parceiros menores */
   .logos-parceiros img {
     max-width: 90px;
-    padding: 4px;
+    padding: 4px; /* preenchimento */
   }
   .diferenciais-valores h2 {
     font-size: 20px;
@@ -350,18 +398,21 @@ h3 {
 }
 
 @media (max-width: 400px) {
+  /* Item do carrossel quase largura total */
   .item {
     max-width: 99vw;
   }
+  /* Bloco de serviço e diferencial ainda menores */
   .bloco-servico, .bloco {
-    padding: 6px;
+    padding: 6px; /* preenchimento */
     font-size: 12px;
   }
   .bloco-servico h3, .bloco h3 {
     font-size: 12px;
   }
+  /* Logos dos parceiros ainda menores */
   .logos-parceiros img {
     max-width: 60px;
-    padding: 2px;
+    padding: 2px; /* preenchimento */
   }
 }

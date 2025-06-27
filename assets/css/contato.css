@@ -1,14 +1,16 @@
+/* Reset de fonte para todos os elementos */
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
+/* Título principal da página de contato */
 #titulo-1{
     color: #0057b7;
     text-align: center;
     font-size: 42px;
 }
 
+/* Segundo título da página de contato */
 #titulo-2{
     color: #0057b7;
     text-align: center;
@@ -16,17 +18,19 @@
     margin-top: 40px; /* ajuste o valor conforme desejar */
 }
 
-
+/* Subtítulo da página de contato */
 #subtitulo{
     color: #0057b7;
     font-size: 24px;
     text-align: center;
 }
 
+/* Remove borda do agrupamento de campos (fieldset) */
 fieldset{
     border: 0;
 }
 
+/* Corpo do formulário de contato */
 #corpo2{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.3em;
@@ -37,40 +41,48 @@ fieldset{
     align-items: center;
 }
 
+/* Estilo geral para campos de formulário */
 input, select, textarea, button{
     border-radius: 10px;
 }
 
+/* Espaçamento entre campos do formulário */
 .campo{
     margin-bottom: 0.8em;
 }
 
+/* Estilo do rótulo (label) dos campos */
 .campo label{
-    margin-bottom: 0.2em;
+    margin-bottom: 0.2em; /* margem inferior */
     color: #003d7f;
     display: block;
 }
 
+/* Campos agrupados em linha (fieldset.grupo) */
 fieldset.grupo .campo{
     float: left;
-    margin-right: 1em;
+    margin-right: 1em; /* margem à direita */
 }
 
+/* Estilo dos campos de texto, email, telefone, seleção e área de texto */
 .campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo select, .campo textarea{
-    padding: 0.4em;
+    padding: 0.4em; /* preenchimento interno */
     border: 1px solid #003d7f;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display: block;
 }
 
+/* Espaçamento das opções do campo de seleção (select) */
 .campo select option{
     padding-right: 1em;
 }
 
+/* Destaque ao focar nos campos */
 .campo input:focus, .campo select:focus, .campo textarea:focus{
     background: #ffecee;
 }
 
+/* Estilo do botão de envio */
 .botao{
     font-size: 1.2em;
     background-color: #0057b7;
@@ -83,37 +95,43 @@ fieldset.grupo .campo{
     margin: 0 auto;
 }
 
+/* Efeito ao passar o mouse (hover) no botão de envio */
 .botao:hover{
     background-color: #003d7f;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
 }
 
+/* Cursor de ponteiro para botões e campo de seleção */
 .botao, select{
     cursor: pointer;
 }
 
+/* Container flexível para formulário e mapa */
 .container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;  /* Centraliza os itens na horizontal */
     margin-top: 20px;
-    gap: 60px; /* Adiciona um espaço entre o formulário e o mapa */
+    gap: 60px; /* Espaço entre o formulário e o mapa */
 }
 
+/* Espaçamento à esquerda do mapa */
 .container > div:not(#corpo2) {
-    margin-left: 60px; /* separa o iframe do formulário, ajuste o valor conforme desejar */
+    margin-left: 60px; /* separa o iframe do formulário */
 }
 
+/* Estilo do campo de seleção (select) e suas opções */
 select, select option {
     font-family: 'Segoe UI', sans-serif;
     color: #780000;
     background-color: #ffffff;
     font-size: 16px;
-  }
+}
 
-  iframe {
+/* Estilo do iframe do mapa */
+iframe {
     border: 0;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
@@ -125,6 +143,7 @@ select, select option {
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 900px) {
+  /* Container em coluna e ajustes de espaçamento */
   .container {
     flex-direction: column;
     align-items: center;
@@ -133,6 +152,7 @@ select, select option {
   .container > div:not(#corpo2) {
     margin-left: 0;
   }
+  /* Mapa menor */
   iframe {
     width: 90vw;
     max-width: 400px;
@@ -142,26 +162,32 @@ select, select option {
 }
 
 @media (max-width: 600px) {
+  /* Títulos menores */
   #titulo-1,
   #titulo-2 {
     font-size: 28px;
   }
+  /* Subtítulo menor */
   #subtitulo {
     font-size: 18px;
   }
+  /* Texto do corpo menor e com preenchimento interno (padding) */
   #corpo2 {
     font-size: 1em;
     padding: 0 5px;
   }
+  /* Menor espaçamento no container */
   .container {
     gap: 18px;
     margin-top: 10px;
   }
+  /* Mapa ainda menor */
   iframe {
     width: 98vw;
     max-width: 98vw;
     height: 180px;
   }
+  /* Campos e botões menores */
   .campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo select, .campo textarea {
     font-size: 15px;
     padding: 0.3em;
@@ -173,13 +199,16 @@ select, select option {
 }
 
 @media (max-width: 400px) {
+  /* Títulos ainda menores */
   #titulo-1,
   #titulo-2 {
     font-size: 20px;
   }
+  /* Subtítulo ainda menor */
   #subtitulo {
     font-size: 14px;
   }
+  /* Mapa ainda menor */
   iframe {
     height: 120px;
   }

@@ -1,3 +1,4 @@
+/* Estilo do corpo (body) da página de serviço */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -5,6 +6,7 @@ body {
   color: #333;
 }
 
+/* Container principal dos serviços */
 .container-servicos {
   display: flex;
   max-width: 1400px;
@@ -13,6 +15,7 @@ body {
   gap: 0;
 }
 
+/* Menu lateral de navegação dos serviços */
 .menu-lateral {
   width: 300px;
   display: flex;
@@ -21,11 +24,12 @@ body {
   padding: 40px 20px;
 }
 
+/* Links do menu lateral */
 .menu-lateral a {
   display: block;
   background-color: #e0e0e0;
   color: #333;
-  padding: 18px;
+  padding: 18px; /* preenchimento */
   text-align: center;
   text-decoration: none;
   font-weight: bold;
@@ -33,10 +37,12 @@ body {
   transition: background-color 0.3s;
 }
 
+/* Efeito hover nos links do menu lateral */
 .menu-lateral a:hover {
   background-color: #ccc;
 }
 
+/* Grade dos serviços */
 .grade-servicos {
   flex: 1;
   display: grid;
@@ -44,6 +50,7 @@ body {
   gap: 30px;
 }
 
+/* Bloco individual de serviço */
 .servico {
   background-color: #fff;
   border-radius: 8px;
@@ -53,10 +60,12 @@ body {
   transition: transform 0.2s;
 }
 
+/* Efeito hover no bloco de serviço */
 .servico:hover {
   transform: scale(1.02);
 }
 
+/* Título do serviço (usado em servico1) */
 .servico1 h3 {
   margin: 15px 0;
   font-size: 18px;
@@ -74,6 +83,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Conteúdo da seção de serviço (texto + imagem) */
 .conteudo-servico {
   display: flex;
   align-items: center;
@@ -85,26 +95,30 @@ body {
   flex-wrap: wrap;
 }
 
+/* Título da seção de serviço */
 .titulo-servico {
   margin-bottom: 16px;
 }
 
-
+/* Texto do serviço */
 .texto-servico {
   flex: 1;
   min-width: 280px;
   max-width: 450px;
 }
 
+/* Parágrafo do texto do serviço */
 .texto-servico p {
   text-align: justify;
 }
 
+/* Imagem do serviço */
 .imagem-servico {
   flex: 1;
   max-width: 450px;
 }
 
+/* Imagem dentro do bloco de imagem do serviço */
 .imagem-servico img {
   width: 100%;
   height: auto;
@@ -114,11 +128,13 @@ body {
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 900px) {
+  /* Container em coluna e ajustes de espaçamento */
   .container-servicos {
     flex-direction: column;
     gap: 0;
     padding: 0 2vw;
   }
+  /* Menu lateral em linha */
   .menu-lateral {
     width: 100%;
     flex-direction: row;
@@ -126,13 +142,16 @@ body {
     padding: 18px 0 0 0;
     justify-content: center;
   }
+  /* Links do menu lateral menores */
   .menu-lateral a {
     padding: 12px;
     font-size: 15px;
   }
+  /* Grade dos serviços com menos espaço */
   .grade-servicos {
     gap: 18px;
   }
+  /* Conteúdo da seção de serviço adaptado */
   .conteudo-servico {
     gap: 18px;
     max-width: 98vw;
@@ -144,31 +163,38 @@ body {
 }
 
 @media (max-width: 600px) {
+  /* Container com menos preenchimento */
   .container-servicos {
     padding: 0 1vw;
   }
+  /* Menu lateral em coluna novamente */
   .menu-lateral {
     flex-direction: column;
     width: 100%;
     gap: 6px;
     padding: 8px 0 0 0;
   }
+  /* Links do menu lateral ainda menores */
   .menu-lateral a {
     font-size: 13px;
     padding: 8px;
   }
+  /* Grade dos serviços em uma coluna */
   .grade-servicos {
     grid-template-columns: 1fr;
     gap: 8px;
   }
+  /* Título do serviço menor */
   .servico1 h3 {
     font-size: 15px;
     margin: 10px 0;
   }
+  /* Seção central com menos preenchimento */
   .secao-servico {
     padding: 10px 2vw;
     min-height: unset;
   }
+  /* Conteúdo da seção de serviço em coluna */
   .conteudo-servico {
     flex-direction: column;
     gap: 10px;
@@ -182,14 +208,17 @@ body {
 }
 
 @media (max-width: 400px) {
+  /* Links do menu lateral ainda menores */
   .menu-lateral a {
     font-size: 11px;
     padding: 6px;
   }
+  /* Título do serviço ainda menor */
   .servico1 h3 {
     font-size: 12px;
     margin: 6px 0;
   }
+  /* Seção central com preenchimento mínimo */
   .secao-servico {
     padding: 4px 1vw;
   }

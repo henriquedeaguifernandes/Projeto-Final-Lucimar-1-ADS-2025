@@ -1,18 +1,22 @@
+/* Reset básico de dimensionamento da caixa (box-sizing), margem (margin) e preenchimento (padding) para todos os elementos */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Estilo base do corpo (body), define fonte e espaçamento superior para acomodar cabeçalho fixo */
 body {
   font-family: Arial, sans-serif;
   padding-top: 110px;
 }
 
+/* Remove o preenchimento superior da área principal (main) */
 main {
   padding-top: 0;
 }
 
+/* Container principal do carrossel */
 .carousel {
   width: 100%;
   max-width: 100vw;
@@ -21,24 +25,28 @@ main {
   position: relative;
 }
 
+/* Faixa (track) que contém todos os slides do carrossel */
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
   height: 100%;
 }
 
+/* Cada slide individual do carrossel */
 .carousel-slide {
   min-width: 100%;
   height: 100%;
   position: relative;
 }
 
+/* Imagem dentro de cada slide do carrossel */
 .carousel-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Faz a imagem cobrir o slide todo sem distorcer, mas com corte proporcional */
+  object-fit: cover; /* Faz a imagem cobrir todo o slide sem distorcer, mas com corte proporcional */
 }
 
+/* Botões de navegação do carrossel (esquerda/direita) */
 .carousel-button {
   position: absolute;
   top: 50%;
@@ -58,6 +66,7 @@ main {
   transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
 
+/* Efeito ao passar o mouse (hover) nos botões do carrossel */
 .carousel-button:hover {
   background-color: #e0e0e0; 
   color: #000; 
@@ -65,18 +74,22 @@ main {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
 }
 
+/* Efeito ao passar o mouse (hover) no ícone SVG dentro do botão */
 .carousel-button:hover svg {
   fill: #000; 
 }
 
+/* Botão do lado esquerdo do carrossel */
 .carousel-button.left {
   left: 10px;
 }
 
+/* Botão do lado direito do carrossel */
 .carousel-button.right {
   right: 10px;
 }
 
+/* Container dos indicadores (bolinhas) do carrossel */
 .carousel-indicators {
    display: flex;
   gap: 8px;
@@ -84,6 +97,7 @@ main {
   margin-top: 16px;
 }
 
+/* Estilo dos botões indicadores do carrossel */
 .carousel-indicators button {
   width: 12px;
   height: 12px;
@@ -94,17 +108,20 @@ main {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Efeito ao passar o mouse (hover) nos indicadores */
 .carousel-indicators button:hover {
   background-color: #003c82; 
   transform: scale(1.2); 
 }
 
+/* Indicador ativo do carrossel */
 .carousel-indicators button.active {
   background-color: #003c82; 
 }
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 900px) {
+  /* Ajusta o espaçamento superior do corpo (body) e altura do carrossel para telas menores */
   body {
     padding-top: 80px;
   }
@@ -117,6 +134,7 @@ main {
 }
 
 @media (max-width: 600px) {
+  /* Ajusta o espaçamento superior do corpo (body) e altura do carrossel para telas ainda menores */
   body {
     padding-top: 81px;
   }
@@ -126,6 +144,7 @@ main {
   .carousel-slide {
     height: 180px;
   }
+  /* Reduz tamanho dos botões e indicadores */
   .carousel-button {
     width: 36px;
     height: 36px;
@@ -142,6 +161,7 @@ main {
 }
 
 @media (max-width: 400px) {
+  /* Ajusta o espaçamento superior do corpo (body) e altura do carrossel para telas muito pequenas */
    body {
     padding-top: 65px;
   }
@@ -151,6 +171,7 @@ main {
   .carousel-slide {
     height: 120px;
   }
+  /* Reduz ainda mais o tamanho dos botões */
   .carousel-button {
     width: 28px;
     height: 28px;

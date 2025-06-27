@@ -1,85 +1,98 @@
+/* Estilo do corpo (body) da página de serviços */
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     background-color: #f8f8f8;
     color: #333;
-  }
-  
-  .container-servicos {
+}
+
+/* Container principal dos serviços */
+.container-servicos {
     display: flex;
     max-width: 1400px;
     margin: auto;
-    padding: 40px 20px;
+    padding: 40px 20px; /* preenchimento */
     gap: 30px;
-  }
-  
-  .menu-lateral {
+}
+
+/* Menu lateral de navegação dos serviços */
+.menu-lateral {
     width: 200px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-  
-  .menu-lateral a {
+}
+
+/* Links do menu lateral */
+.menu-lateral a {
     display: block;
     background-color: #e0e0e0;
     color: #333;
-    padding: 15px;
+    padding: 15px; /* preenchimento */
     text-align: center;
     text-decoration: none;
     font-weight: bold;
     border-radius: 6px;
     transition: background-color 0.3s;
-  }
-  
-  .menu-lateral a:hover {
+}
+
+/* Efeito hover nos links do menu lateral */
+.menu-lateral a:hover {
     background-color: #ccc;
-  }
-  
-  .grade-servicos {
+}
+
+/* Grade dos serviços */
+.grade-servicos {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
-  }
-  
-  .servico {
+}
+
+/* Bloco individual de serviço */
+.servico {
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.2s;
-  }
-  
-  .servico:hover {
-    transform: scale(1.02);
-  }
-
-  main.container-servicos {
-  align-items: flex-start; /* alinha topo do menu e grade */
 }
- 
-  .servico img {
+
+/* Efeito hover no bloco de serviço */
+.servico:hover {
+    transform: scale(1.02);
+}
+
+/* Container principal dos serviços quando usado como main */
+main.container-servicos {
+    align-items: flex-start; /* alinha topo do menu e grade */
+}
+
+/* Imagem do serviço */
+.servico img {
     width: 100%;
     height: 180px;
     object-fit: cover;
-  }
-  
-  .servico h3 {
+}
+
+/* Título do serviço */
+.servico h3 {
     margin: 15px 0;
     font-size: 18px;
     color: #1a237e;
-  }
+}
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 900px) {
+  /* Container e main em coluna, ajustes de espaçamento */
   .container-servicos, main.container-servicos {
     flex-direction: column;
     gap: 18px;
     padding: 20px 5vw;
     align-items: stretch;
   }
+  /* Menu lateral em linha */
   .menu-lateral {
     width: 100%;
     flex-direction: row;
@@ -87,36 +100,44 @@ body {
     margin-bottom: 10px;
     justify-content: center;
   }
+  /* Links do menu lateral menores */
   .menu-lateral a {
     padding: 10px;
     font-size: 15px;
   }
+  /* Grade dos serviços com menos espaço */
   .grade-servicos {
     gap: 18px;
   }
 }
 
 @media (max-width: 600px) {
+  /* Container e main com menos preenchimento e gap */
   .container-servicos, main.container-servicos {
     padding: 8px 2vw;
     gap: 10px;
   }
+  /* Menu lateral em coluna novamente */
   .menu-lateral {
     flex-direction: column;
     width: 100%;
     gap: 6px;
   }
+  /* Links do menu lateral ainda menores */
   .menu-lateral a {
     font-size: 14px;
     padding: 8px;
   }
+  /* Grade dos serviços em uma coluna */
   .grade-servicos {
     grid-template-columns: 1fr;
     gap: 8px;
   }
+  /* Imagem do serviço menor */
   .servico img {
     height: 110px;
   }
+  /* Título do serviço menor */
   .servico h3 {
     font-size: 15px;
     margin: 10px 0;
@@ -124,16 +145,20 @@ body {
 }
 
 @media (max-width: 400px) {
+  /* Container e main com preenchimento mínimo */
   .container-servicos, main.container-servicos {
     padding: 4px 1vw;
   }
+  /* Links do menu lateral ainda menores */
   .menu-lateral a {
     font-size: 12px;
     padding: 6px;
   }
+  /* Imagem do serviço ainda menor */
   .servico img {
     height: 70px;
   }
+  /* Título do serviço ainda menor */
   .servico h3 {
     font-size: 12px;
     margin: 6px 0;

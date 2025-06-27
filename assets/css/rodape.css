@@ -1,10 +1,11 @@
-/* Definição das cores principais do site (temporariamente) */
+/* Definição das cores principais do site */
 :root {
     --azul-principal: #0057b7;
     --azul-claro: #e0ecff;
     --amarelo-leve: #fffffe;
   }
   
+/* Informações do rodapé (footer) em layout flexível */
 .info-footer {
   background-color: var(--azul-principal);
   color: white;
@@ -12,54 +13,60 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 20px 40px;
+  padding: 20px 40px; /* preenchimento */
   text-align: left;
   font-size: 0.95rem;
   font-weight: normal;
   line-height: 1.6;
 }
 
-
+/* Coluna do rodapé */
 .coluna {
   flex: 1 1 220px;
   margin: 10px;
 }
 
-
+/* Rodapé principal */
 footer {
   background-color: #111;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 10px; /* preenchimento */
   font-size: 0.9rem;
   font-weight: normal;
   margin-top: auto;
 }
   
-  body {
+/* Estilo do corpo (body) */
+body {
     background-color: white;
     font-family: 'Segoe UI', sans-serif;
-  }
+}
 
-  .info-footer a {
+/* Links no rodapé */
+.info-footer a {
   color: white;
   text-decoration: none;
 }
 
+/* Efeito hover nos links do rodapé */
 .info-footer a:hover {
   text-decoration: underline;
   color: #ffdd00; /* Um amarelo leve para destacar */
 }
 
+/* Container das redes sociais */
 .redes-sociais {
   align-items: flex-start;
   text-align: left;
 }
 
+/* Container dos ícones sociais */
 .icones-sociais {
   align-items: flex-start;
 }
 
+/* Ícone social (Instagram, WhatsApp, etc) */
 .social-icon {
   width: 80px;
   height: 80px;
@@ -67,16 +74,19 @@ footer {
   border-radius: 5px;
 }
 
+/* Efeito hover no ícone do Instagram */
 .social-icon[alt="Instagram"]:hover {
   box-shadow: 0 0 8px rgba(255, 182, 193, 0.8); /* rosa claro */
 }
 
+/* Efeito hover no ícone do WhatsApp */
 .social-icon[alt="WhatsApp"]:hover {
   box-shadow: 0 0 8px rgba(0, 255, 0, 0.7); /* verde */
 }
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 900px) {
+  /* Rodapé em coluna e ajustes de espaçamento */
   .info-footer {
     flex-direction: column;
     align-items: stretch;
@@ -96,6 +106,7 @@ footer {
 }
 
 @media (max-width: 600px) {
+  /* Rodapé com menos preenchimento e fonte menor */
   .info-footer {
     padding: 10px 2vw;
     font-size: 0.9rem;
@@ -116,6 +127,7 @@ footer {
 }
 
 @media (max-width: 400px) {
+  /* Rodapé ainda menor para telas pequenas */
   .info-footer {
     font-size: 0.8rem;
     padding: 6px 1vw;
